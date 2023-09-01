@@ -1,6 +1,19 @@
+<script>
+    let routes = [
+        ["Home", "/", "ri-home-line"],
+        ["Blog", "/blog", "ri-article-line"],
+        ["Contact Me", "/contact-me", "ri-contacts-fill"],
+        ["News Letter", "/news-letter", "ri-newspaper-line"],
+        // ["Projects", "/projects", "ri-window-2-line"],
+    ];
+</script>
+
 <nav class="mt-2">
-    {#each [["Home", "/", "ri-home-line"], ["Blog", "/blog", "ri-article-line"], ["Contact Me", "/contact-me", "ri-contacts-fill"], ["News Letter", "/news-letter", "ri-newspaper-line"], ["Projects", "/projects", "ri-window-2-line"]] as [name, path, icon]}
-        <a class="text-sm hover:underline border-dotted border-2 p-1 m-1" href={path}>
+    {#each routes as [name, path, icon]}
+        <a
+            class="text-sm hover:underline border-dotted border-2 p-1 m-1"
+            href={path}
+        >
             <i class="{icon} text-[10px]" />
             {name}
         </a>
