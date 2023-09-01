@@ -1,4 +1,5 @@
 <script>
+    import { page } from "$app/stores";
     let routes = [
         ["Home", "/", "ri-home-line"],
         ["Blog", "/blog", "ri-article-line"],
@@ -11,8 +12,9 @@
 <nav class="mt-2">
     {#each routes as [name, path, icon]}
         <a
-            class="text-sm hover:underline border-dotted border-2 p-1 m-1"
+            class="text-sm hover:underline outline-dotted outline-2 p-1 m-1"
             href={path}
+            class:cur={$page.url.pathname === path}
         >
             <i class="{icon} text-[10px]" />
             {name}
@@ -31,7 +33,13 @@
         transition: opacity 50ms;
         transition: underline 50ms;
     }
-    a:hover {
+    a:hover,
+    .cur {
         opacity: 1;
+    }
+    .cur {
+        outline-color: brown;
+        outline-width: 0.19rem;
+        outline-style: dashed;
     }
 </style>
