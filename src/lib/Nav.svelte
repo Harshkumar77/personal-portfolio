@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     let routes = [
         ["Home", "/", "ri-home-line"],
+        ["Resume", "/resume", "ri-briefcase-line"],
         ["Blog", "/blog", "ri-article-line"],
         ["Contact Me", "/contact-me", "ri-contacts-fill"],
         ["News Letter", "/news-letter", "ri-newspaper-line"],
