@@ -5,4 +5,4 @@ export const c2 = '#E08F62'
 export const c3 = '#DED7B1'
 export const c4 = '#9DAB86'
 
-export const resumeDriveLink = 'https://drive.google.com/file/d/1FXnWc1vm1TVprXitCkEhu99nIVDRvK5w/view?usp=sharing'
+export const resumeDriveLink = 'https://drive.google.com/file/d/1w1o18f0HHJVLP_ph8FbX3PSDIUB_zOjE/view?usp=sharing'
